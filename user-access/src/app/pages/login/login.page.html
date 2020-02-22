@@ -1,0 +1,28 @@
+<ion-content>
+  <div id="login-top">
+    <img src="../../../assets/icon/favicon.png">
+
+  </div>
+  <div class="ion-padding">
+    <ion-list>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email"></ion-input>
+
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input [(ngModel)]="senha"></ion-input>
+      </ion-item>
+    </ion-list><br><br>
+
+    <ion-button expand="block" (click)="login()">Enviar</ion-button>
+    <br><br><br><br>
+
+  </div>
+  <ion-text color="danger">
+    <p class="ion-text-right"(click)="esqueci()">Esqueci minha Senha!</p>
+  </ion-text>
+
+</ion-content>
